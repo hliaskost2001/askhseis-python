@@ -5,20 +5,20 @@ r=urllib.request.urlopen(url)
 html=r.read()
 html=html.decode()
 d=json.loads(html)
-file = input("File name: ")
+file = input("Ονομα αρχείου: ")
 f = open(file, 'r')
 f = f.read()
 f = json.loads(f)
-thisdict = {
+dict = {
   "BTC": "54267.673556",
   "ETH": "10797,677999999998",
   "LTC":"182.01"
 }
 
-print('Your portofolio is:')
+print('Τα αποτελέσματα είναι:')
 print(f)
-print('Which in Euros is: ')
-print(thisdict)
+print('Σε ευρώ είναι: ')
+print(dict)
 
 
 
